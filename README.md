@@ -20,6 +20,13 @@
 * Prediction
 * Report / README
 
+## Không cần chạy quá nhiều model
+
+1.Logistic Regression — baseline
+2.Decision Tree
+3.Random Forest
+4.XGBoost nếu còn thời gian
+
 ## Project Structure
 
 ```text
@@ -56,7 +63,7 @@ airline-satisfaction/
 
 ```bash
 git clone <repo-url>
-cd airline-satisfaction
+cd AIO2026-Conquer3-Redteam
 
 python -m venv .venv
 source .venv/bin/activate   # Mac/Linux
@@ -74,3 +81,12 @@ feature/demo
 ```
 
 Không push trực tiếp lên `main`.
+
+## Trước khi push
+
+```bash
+pytest -v
+```
+
+Chỉ push khi tất cả test PASS.
+
